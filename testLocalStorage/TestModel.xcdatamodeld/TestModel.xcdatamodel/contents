@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18F108f" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="JCSchoolModel" representedClassName="JCSchoolModel" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nums" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="schoolModelT" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JCTeacherModel" inverseName="teacherModel" inverseEntity="JCTeacherModel" syncable="YES"/>
+        <relationship name="schoolModeS" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JCStudentModel" inverseName="studentModel" inverseEntity="JCStudentModel" syncable="YES"/>
+    </entity>
+    <entity name="JCStudentModel" representedClassName="JCStudentModel" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="bloodType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="studentModel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="JCSchoolModel" inverseName="schoolModeS" inverseEntity="JCSchoolModel" syncable="YES"/>
+    </entity>
+    <entity name="JCTeacherModel" representedClassName="JCTeacherModel" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="course" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="teacherModel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="JCSchoolModel" inverseName="schoolModelT" inverseEntity="JCSchoolModel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="JCSchoolModel" positionX="-54" positionY="18" width="128" height="120"/>
+        <element name="JCStudentModel" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="JCTeacherModel" positionX="-36" positionY="54" width="128" height="105"/>
+    </elements>
+</model>
