@@ -9,7 +9,7 @@ Just for test Cocoapods install.You can create 'Podfile' under the project folde
 ```
 platform :ios, '8.0'
 
-target "YourName" do
+target "YourProjectName" do
 
 pod 'testLocalStorage'
 
