@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
                andAttribute : (NSString *) attribute
               andSearchName : (NSString *) searchName;
 
-+(BOOL)updateManagedObject : (NSManagedObject*) managedObject;
++(NSString *)updateManagedObject : (NSManagedObject*) managedObject;
 
 
 /**

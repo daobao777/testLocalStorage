@@ -133,7 +133,7 @@ static JCCoreDataManager *manager = nil;
 }
 
 #pragma mark -更新数据
-+ (BOOL)updateManagedObject:(NSManagedObject *)managedObject{
++ (NSString *)updateManagedObject:(NSManagedObject *)managedObject{
     [[JCCoreDataManager sharedInstanceManager].objectContext refreshObject:managedObject mergeChanges:YES];
     return [JCCoreDataManager save];
 }
