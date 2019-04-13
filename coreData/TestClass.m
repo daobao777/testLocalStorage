@@ -7,7 +7,6 @@
 //
 
 #import "TestClass.h"
-#import <objc/runtime.h>
 
 @interface TestClass(){
     

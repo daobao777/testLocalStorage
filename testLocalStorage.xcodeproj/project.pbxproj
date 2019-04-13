@@ -154,8 +154,6 @@
 				5C57EE20225B403B006192F7 /* LaunchScreen.storyboard */,
 				5C57EE23225B403B006192F7 /* Info.plist */,
 				5C57EE24225B403B006192F7 /* main.m */,
-				5C57EE47225B4C64006192F7 /* TestClass.h */,
-				5C57EE48225B4C64006192F7 /* TestClass.m */,
 				5CA8579F225C7795000CE0E5 /* TestModel.xcdatamodeld */,
 			);
 			path = testLocalStorage;
@@ -196,6 +194,8 @@
 				5C236F47225ECC61002C8300 /* JCSchoolModel+CoreDataProperties.m */,
 				5CA857B5225C87A9000CE0E5 /* JCCoreDataManager.h */,
 				5CA857B6225C87A9000CE0E5 /* JCCoreDataManager.m */,
+				5C57EE47225B4C64006192F7 /* TestClass.h */,
+				5C57EE48225B4C64006192F7 /* TestClass.m */,
 			);
 			path = coreData;
 			sourceTree = "<group>";
